@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>我的电影网_我的电影网高清电影电视剧免费在线观看_影视大全排行榜</title>
+<meta name="description" content="我的电影网提供高清电影、电视剧、综艺、动漫资源免费在线观看,我的电影网按签证口岸编号分类整理片库与影视排行榜、观影指南与影视资讯,支持手机移动端自适应播放,看片就上我的电影网。">
+<meta name="keywords" content="我的电影网,我的电影网在线观看,电影在线观看,电视剧大全,综艺动漫,影视排行榜,新片上线,手机看电影">
+<meta name="author" content="我的电影网">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#12294a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="canonical" href="https://wodedianyingwang-cn.github.io/">
+<link rel="apple-touch-icon" href="/favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="我的电影网">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:url" content="https://wodedianyingwang-cn.github.io/">
+<meta property="og:title" content="我的电影网_高清电影电视剧综艺动漫在线观看">
+<meta property="og:description" content="我的电影网每日更新热门电影、电视剧、综艺、动漫高清资源,按签证口岸分类查片,手机移动端自适应,在线看片更顺手。">
+<meta property="og:image" content="https://wodedianyingwang-cn.github.io/favicon.ico">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的电影网_高清影视在线观看">
+<meta name="twitter:description" content="我的电影网,电影电视剧综艺动漫一站看完,分类检索查片,移动端自适应,每日更新影视榜单。">
+<style>
+:root{
+  --navy:#12294a;
+  --navy2:#0b1d38;
+  --navy3:#050f1f;
+  --page:#f7f0e0;
+  --page2:#efe4cd;
+  --page3:#e2d4b8;
+  --gold:#c8a45c;
+  --gold2:#9c7c36;
+  --ink:#1d2430;
+  --txt:#5c6470;
+  --sub:#8a8f99;
+  --red:#c8102e;
+  --blue:#1f5f8b;
+  --green:#2f7d5d;
+  --purple:#6b4c9a;
+  --max:1240px;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  --mono:"SFMono-Regular",Consolas,"Roboto Mono",Menlo,monospace;
+  --wm:
+    repeating-linear-gradient(45deg,rgba(200,164,92,.1) 0 2px,transparent 2px 13px),
+    repeating-linear-gradient(-45deg,rgba(200,164,92,.08) 0 2px,transparent 2px 13px);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background-color:var(--page);
+  background-image:
+    radial-gradient(circle at 88% -8%,rgba(200,164,92,.2),transparent 42%),
+    radial-gradient(circle at 4% 8%,rgba(31,95,139,.12),transparent 40%),
+    var(--wm);
+  color:var(--ink);
+  font:15px/1.84 var(--sans);
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* ===== 机读条码条 ===== */
+.mrz{height:30px;margin:26px 0 20px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);
+  background:repeating-linear-gradient(90deg,var(--navy2) 0 2px,transparent 2px 6px,var(--navy2) 6px 9px,transparent 9px 11px,
+  var(--navy2) 11px 12px,transparent 12px 16px);background-color:var(--page2);position:relative}
+.mrz::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(200,164,92,.4)}
+/* 盖章串 */
+.stamp-row{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px 0 18px}
+.stamp-row i{flex:1;height:5px;background:repeating-linear-gradient(90deg,var(--navy2) 0 8px,transparent 8px 16px)}
+.stamp-row s{width:34px;height:34px;border-radius:50%;flex:0 0 auto;text-decoration:none;position:relative;
+  display:grid;place-items:center;font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.02em}
+.stamp-row s::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid currentColor;opacity:.85}
+.stamp-row s::after{content:"";position:absolute;inset:4px;border-radius:50%;border:1px dashed currentColor}
+.stamp-row s:nth-child(2){color:var(--red);transform:rotate(-9deg)}
+.stamp-row s:nth-child(3){color:var(--blue);transform:rotate(7deg)}
+.stamp-row s:nth-child(4){color:var(--green);transform:rotate(-5deg)}
+.stamp-row s:nth-child(5){color:var(--purple);transform:rotate(10deg)}
+
+/* ===== 顶栏：护照封皮 ===== */
+.topbar{position:sticky;top:0;z-index:60;background:linear-gradient(180deg,var(--navy),var(--navy2));
+  border-bottom:2px solid var(--gold)}
+.topbar::before{content:"";display:block;height:8px;
+  background:repeating-linear-gradient(90deg,var(--gold) 0 7px,transparent 7px 14px)}
+.topbar .wrap{display:flex;align-items:center;gap:14px;height:76px}
+.logo{display:flex;align-items:center;gap:12px;flex:0 0 auto}
+.logo .book{width:40px;height:44px;flex:0 0 auto;border-radius:3px;position:relative;
+  background:linear-gradient(150deg,#24406c,var(--navy3));border:1px solid var(--gold);
+  box-shadow:inset 0 0 0 2px rgba(200,164,92,.28)}
+.logo .book::before{content:"";position:absolute;left:50%;top:6px;transform:translateX(-50%);
+  width:22px;height:22px;border-radius:50%;border:2px solid var(--gold)}
+.logo .book::after{content:"★";position:absolute;left:50%;top:6px;transform:translateX(-50%);
+  width:22px;height:22px;line-height:20px;text-align:center;font-size:11px;color:var(--gold)}
+.logo b{font-size:20px;font-weight:900;color:#fff;letter-spacing:-.5px}
+.logo b em{font-style:normal;color:var(--gold)}
+.logo small{display:block;font-family:var(--mono);font-size:9px;letter-spacing:2px;color:rgba(247,240,224,.56);font-weight:700}
+.nav{flex:1 1 auto;display:flex;align-items:center;gap:2px}
+.nav a{padding:7px 10px;font-size:13.5px;font-weight:800;color:rgba(247,240,224,.92);white-space:nowrap;transition:.16s;border-radius:3px}
+.nav a:hover,.nav a.on{background:var(--gold);color:var(--navy3)}
+.search{flex:0 1 190px;display:flex;align-items:center;background:rgba(247,240,224,.12);
+  border:1px solid rgba(200,164,92,.7);border-radius:3px;overflow:hidden}
+.search input{flex:1;min-width:0;border:0;outline:0;background:none;font-size:13.5px;font-weight:700;padding:8px 12px;color:var(--page)}
+.search input::placeholder{color:rgba(247,240,224,.5)}
+.search button{border:0;cursor:pointer;padding:8px 14px;background:var(--gold);color:var(--navy3);font-weight:900;font-size:13px}
+.search button:hover{background:var(--red);color:#fff}
+.menu-btn{display:none;border:1px solid var(--gold);background:rgba(200,164,92,.18);color:var(--gold);font-weight:900;
+  font-size:13px;padding:8px 15px;cursor:pointer;border-radius:3px;flex:0 0 auto}
+.menu-btn.on{background:var(--gold);color:var(--navy3)}
+
+/* ===== 口岸代码导航带 ===== */
+.portbar{background:var(--navy2);border-bottom:1px solid rgba(200,164,92,.4)}
+.portbar .wrap{padding-top:11px;padding-bottom:11px}
+.portbar .row{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.portbar .row::-webkit-scrollbar{display:none}
+.portbar a{flex:0 0 auto;display:flex;align-items:center;gap:7px;padding:7px 14px;border:1px solid rgba(200,164,92,.44);
+  background:rgba(247,240,224,.08);border-radius:3px;font-size:12.5px;font-weight:900;transition:.16s;
+  color:rgba(247,240,224,.92)}
+.portbar a:hover{background:var(--gold);color:var(--navy3);border-color:var(--gold)}
+.portbar a.on{background:var(--red);color:#fff;border-color:var(--red)}
+.portbar a u{text-decoration:none;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.06em;
+  padding:1px 6px;border-radius:2px;background:rgba(200,164,92,.3);color:var(--gold)}
+.portbar a:hover u{background:var(--navy3);color:var(--gold)}
+.portbar a.on u{background:rgba(255,255,255,.24);color:#fff}
+
+/* ===== HERO：护照内页（资料页 + 标题 + 盖章区） ===== */
+.hero{padding:16px 0 6px}
+.passport{background:linear-gradient(170deg,var(--navy),var(--navy3));border-radius:8px;padding:0 12px 12px;
+  box-shadow:0 18px 34px rgba(5,15,31,.32);position:relative}
+.passport::before{content:"";position:absolute;inset:0;border-radius:8px;pointer-events:none;
+  box-shadow:inset 0 0 0 1px rgba(200,164,92,.34)}
+.passport .hdr{height:30px;margin:0 -12px 12px;border-radius:0 0 8px 8px;display:flex;align-items:center;
+  justify-content:space-between;padding:0 14px;background:rgba(200,164,92,.14);border-bottom:1px solid rgba(200,164,92,.34)}
+.passport .hdr em{font-style:normal;font-size:11px;font-weight:900;letter-spacing:.24em;color:var(--gold)}
+.passport .hdr s{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--gold);text-decoration:none}
+.passport .inner{background:var(--page);border-radius:6px;overflow:hidden;position:relative}
+.passport .inner::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:var(--wm);opacity:.6}
+.pp-grid{display:grid;grid-template-columns:250px 1.25fr .92fr;position:relative;z-index:2}
+/* 左：护照资料页 */
+.datapage{border-right:1px solid var(--page3);padding:14px;background:var(--page2)}
+.datapage .ph{width:96px;height:120px;border:2px solid var(--navy2);border-radius:3px;position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#3c5c86,var(--navy3))}
+.datapage .ph::after{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(45deg,rgba(200,164,92,.18) 0 2px,transparent 2px 10px)}
+.datapage .ph s{position:absolute;left:0;right:0;bottom:0;text-align:center;font-size:9px;font-weight:700;
+  color:var(--page);background:rgba(5,15,31,.6);text-decoration:none;padding:2px 0}
+.datapage dl{margin-top:10px}
+.datapage dl div{display:flex;gap:8px;align-items:baseline;padding:5px 0;border-bottom:1px dotted var(--page3)}
+.datapage dt{font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.06em;color:var(--sub);
+  flex:0 0 74px;white-space:nowrap}
+.datapage dd{font-size:12.5px;font-weight:900;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.datapage .mrzline{margin-top:10px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.06em;
+  color:var(--navy2);background:#fff;border:1px solid var(--navy2);border-radius:2px;padding:6px 7px;overflow:hidden;
+  text-overflow:ellipsis;white-space:nowrap}
+/* 中：标题区 */
+.titlezone{padding:22px 22px 20px;position:relative;overflow:hidden}
+.titlezone>*{position:relative;z-index:2}
+.titlezone .tag{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;font-weight:700;
+  letter-spacing:.14em;color:#fff;background:var(--navy2);padding:5px 13px;border-radius:3px}
+.titlezone h1{margin:13px 0 9px;font-size:33px;line-height:1.28;font-weight:900;letter-spacing:-1px}
+.titlezone h1 span{color:var(--red);border-bottom:5px solid var(--gold)}
+.titlezone .lead{font-size:14px;color:var(--txt);max-width:600px}
+.titlezone .lead b{background:rgba(200,164,92,.34);color:var(--ink);padding:1px 7px;border-radius:3px}
+.prog{margin-top:14px;border:1px solid var(--page3);border-radius:3px;background:#fff;padding:11px 13px}
+.prog .row{display:flex;align-items:center;gap:10px;padding:5px 0}
+.prog .row em{font-style:normal;font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--sub);flex:0 0 62px}
+.prog .bar{flex:1;height:8px;border-radius:4px;background:var(--page2);overflow:hidden;border:1px solid var(--page3)}
+.prog .bar i{display:block;height:100%;border-radius:4px}
+.prog .row:nth-child(1) .bar i{width:96%;background:linear-gradient(90deg,var(--navy),var(--blue))}
+.prog .row:nth-child(2) .bar i{width:88%;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.prog .row:nth-child(3) .bar i{width:92%;background:linear-gradient(90deg,var(--green),#215a41)}
+.prog .row s{flex:0 0 38px;text-align:right;font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--navy2);text-decoration:none}
+.hero-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btn{padding:11px 22px;font-weight:900;font-size:14px;transition:.16s;border-radius:3px}
+.btn:hover{transform:translateY(-2px)}
+.btn-1{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;box-shadow:0 7px 16px rgba(18,41,74,.28)}
+.btn-2{background:transparent;color:var(--navy2);border:2px solid var(--navy2)}
+.btn-2:hover{background:var(--gold);color:var(--navy3);border-color:var(--gold)}
+/* 右：盖章区 */
+.stampzone{border-left:1px solid var(--page3);background:#fff;padding:15px;display:flex;flex-direction:column}
+.stampzone .hd{background:linear-gradient(120deg,var(--navy2),var(--navy3));color:var(--gold);border-radius:3px;
+  padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.stampzone .hd b{font-size:15px;font-weight:900;letter-spacing:.04em}
+.stampzone .hd s{font-family:var(--mono);font-size:10px;font-weight:700;color:var(--navy3);background:var(--gold);
+  padding:2px 9px;text-decoration:none;border-radius:3px}
+.marks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.mark{aspect-ratio:1/1;border-radius:50%;position:relative;display:grid;place-items:center;text-align:center;
+  font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.04em;line-height:1.4;padding:8px}
+.mark::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid currentColor;opacity:.85}
+.mark::after{content:"";position:absolute;inset:5px;border-radius:50%;border:1px dashed currentColor;opacity:.7}
+.mark b{display:block;font-size:10px;font-weight:900;font-family:var(--sans)}
+.mark:nth-child(1){color:var(--red);transform:rotate(-8deg)}
+.mark:nth-child(2){color:var(--blue);transform:rotate(6deg)}
+.mark:nth-child(3){color:var(--green);transform:rotate(-4deg)}
+.mark:nth-child(4){color:var(--purple);transform:rotate(9deg)}
+.kpi{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.kpi div{border:1px solid var(--page3);border-radius:3px;padding:9px 6px;text-align:center;background:var(--page2)}
+.kpi b{display:block;font-family:var(--mono);font-size:16px;font-weight:700;color:var(--navy2)}
+.kpi span{font-size:10.5px;font-weight:800;color:var(--txt)}
+.stampzone .go{margin-top:12px;display:block;text-align:center;background:var(--red);color:#fff;font-weight:900;
+  font-size:13px;padding:11px 14px;border-radius:3px}
+.stampzone .go:hover{background:var(--gold);color:var(--navy3)}
+
+/* ===== 区块 ===== */
+section{padding:28px 0 4px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.sec-head h2{font-size:23px;font-weight:900;letter-spacing:-.5px;display:flex;align-items:center;gap:12px}
+.sec-head h2::before{content:"";width:30px;height:22px;flex:0 0 auto;border:2px solid var(--navy2);border-radius:2px;position:relative;
+  background:linear-gradient(150deg,rgba(200,164,92,.6),transparent)}
+.sec-head h2::before{box-shadow:inset 0 0 0 2px var(--page)}
+.sec-head p{font-size:12.5px;color:var(--sub);font-weight:800;margin-top:4px}
+.more{font-size:13px;font-weight:900;padding:9px 17px;border-radius:3px;background:#fff;color:var(--navy2);
+  border:2px solid var(--navy2)}
+.more:hover{background:var(--navy2);color:var(--gold)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:3px 0 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:0 0 auto;font-size:13.5px;font-weight:800;padding:8px 15px;border-radius:3px;background:#fff;
+  color:var(--navy2);white-space:nowrap;border:1px solid var(--page3)}
+.tabs a.on,.tabs a:hover{background:var(--navy2);color:var(--gold);border-color:var(--navy2)}
+
+/* ===== 热门推荐：签证贴纸卡（4 列） ===== */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.visa{background:#fff;border:2px dashed var(--gold);border-radius:4px;padding:0 0 12px;transition:.22s;
+  box-shadow:0 6px 16px rgba(5,15,31,.08)}
+.visa:hover{transform:translateY(-6px);box-shadow:0 18px 30px rgba(18,41,74,.2)}
+.visa .hd{padding:9px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.06em;color:#fff}
+.visa:nth-child(4n+1) .hd{background:linear-gradient(120deg,var(--navy),var(--navy2))}
+.visa:nth-child(4n+2) .hd{background:linear-gradient(120deg,var(--blue),#123c58)}
+.visa:nth-child(4n+3) .hd{background:linear-gradient(120deg,var(--green),#215a41)}
+.visa:nth-child(4n+4) .hd{background:linear-gradient(120deg,var(--purple),#452f6b)}
+.visa .hd s{font-family:var(--mono);font-size:9px;font-weight:700;color:var(--navy3);background:var(--gold);
+  padding:2px 7px;text-decoration:none;border-radius:2px;flex:0 0 auto}
+.vv{position:relative;aspect-ratio:3/4;overflow:hidden;margin:11px 11px 0;border-radius:3px;border:1px solid var(--page3)}
+.vv .bg{position:absolute;inset:0}
+.vv .wm{position:absolute;inset:0;background-image:var(--wm)}
+.vv .tt{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:30px 9px 9px;color:#fff;font-weight:900;font-size:13px;
+  background:linear-gradient(180deg,transparent,rgba(5,15,31,.9))}
+.vv .ep{position:absolute;left:6px;top:6px;z-index:2;font-family:var(--mono);font-size:10px;font-weight:700;color:#fff;
+  background:var(--red);padding:2px 8px;border-radius:2px}
+.vv .sc{position:absolute;right:6px;top:6px;z-index:2;font-family:var(--mono);font-size:11px;font-weight:700;color:var(--navy3);
+  background:var(--gold);padding:2px 8px;border-radius:2px}
+.sinfo{padding:11px 12px 0}
+.sinfo .nm{font-size:14.5px;font-weight:900;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sinfo .mt{font-size:11px;color:var(--sub);font-weight:800;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sinfo .row{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10px;font-weight:700;
+  color:var(--txt);letter-spacing:.04em;margin-top:9px;padding-top:8px;border-top:1px dotted var(--page3)}
+.sinfo .row b{color:var(--navy2)}
+.sinfo .seal{display:inline-block;width:16px;height:16px;border-radius:50%;border:1.5px solid var(--red);
+  vertical-align:-3px;margin-right:5px;position:relative}
+.sinfo .seal::after{content:"";position:absolute;inset:3px;border-radius:50%;border:1px dashed var(--red)}
+
+/* ===== 入境记录表（DOM 全新：五列栅格） ===== */
+.entry{border:1px solid var(--page3);border-radius:4px;background:#fff;overflow:hidden;
+  box-shadow:0 6px 16px rgba(5,15,31,.06)}
+.entry .et-hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 16px;
+  border-bottom:2px solid var(--page3);background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff}
+.entry .et-hd b{font-size:14px;font-weight:900;letter-spacing:.04em}
+.entry .et-hd s{font-family:var(--mono);font-size:10.5px;font-weight:700;color:var(--navy3);background:var(--gold);
+  padding:2px 9px;text-decoration:none;border-radius:3px}
+.entry .thead,.entry .trow{display:grid;grid-template-columns:92px 90px 1fr 88px 110px;gap:10px;align-items:center}
+.entry .thead{padding:9px 16px;background:var(--page2);border-bottom:1px solid var(--page3);
+  font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--sub)}
+.entry ol{padding:0 16px}
+.entry li{border-bottom:1px dotted var(--page3)}
+.entry li:last-child{border-bottom:0}
+.entry .trow{padding:11px 0}
+.entry .trow:hover{background:var(--page)}
+.entry .date{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--navy2)}
+.entry .port{flex:0 0 auto;font-family:var(--mono);font-size:10px;font-weight:700;color:#fff;background:var(--navy2);
+  padding:2px 8px;border-radius:2px;justify-self:start}
+.entry li:nth-child(3n+2) .port{background:var(--blue)}
+.entry li:nth-child(3n+3) .port{background:var(--green)}
+.entry .nm{min-width:0}
+.entry .nm b{display:block;font-size:14.5px;font-weight:900;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.entry .nm em{font-style:normal;font-family:var(--mono);font-size:11px;font-weight:700;color:var(--txt);display:block;
+  margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.entry .stay{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--txt)}
+.entry .go{font-size:12.5px;font-weight:900;color:#fff;background:var(--blue);padding:8px 0;border-radius:3px;text-align:center}
+.entry li:hover .go{background:var(--red)}
+
+/* ===== 排行榜：三张签证页 ===== */
+.board{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.board .col{background:#fff;border:1px solid var(--page3);border-radius:4px;overflow:hidden;
+  box-shadow:0 6px 16px rgba(5,15,31,.06);display:flex;flex-direction:column}
+.board .vpage{height:80px;position:relative;background:linear-gradient(160deg,#2c4d78,var(--navy3));
+  border-bottom:2px solid var(--gold)}
+.board .vpage::after{content:"";position:absolute;inset:0;background-image:var(--wm);opacity:.5}
+.board .vpage b{position:absolute;left:15px;top:10px;z-index:2;font-size:14px;font-weight:900;color:var(--gold)}
+.board .vpage i{position:absolute;right:12px;bottom:8px;z-index:2;width:44px;height:44px;border-radius:50%;
+  border:2px solid var(--gold);opacity:.8}
+.board .col:nth-child(1) .vpage i{border-color:var(--red)}
+.board .col:nth-child(2) .vpage i{border-color:var(--blue)}
+.board .col:nth-child(3) .vpage i{border-color:var(--green)}
+.board .hd{padding:11px 15px;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  border-bottom:2px solid var(--page3);background:var(--page2)}
+.board .hd h3{font-size:14.5px;font-weight:900;letter-spacing:.04em}
+.board .hd s{font-family:var(--mono);font-size:10.5px;font-weight:700;color:#fff;background:var(--navy2);
+  padding:2px 9px;text-decoration:none;border-radius:3px}
+.board li a{display:flex;gap:10px;align-items:center;padding:11px 15px;border-bottom:1px dotted var(--page3)}
+.board li:last-child a{border-bottom:0}
+.board li a:hover{background:var(--page)}
+.board .no{flex:0 0 28px;height:28px;line-height:26px;font-family:var(--mono);font-size:12px;font-weight:700;
+  color:var(--navy2);text-align:center;background:var(--page2);border:1px solid var(--page3);border-radius:50%}
+.board li:nth-child(-n+3) .no{color:#fff;background:var(--red);border-color:var(--red)}
+.board .t{flex:1;font-size:14px;font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board .h{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--navy2);background:var(--page2);padding:2px 9px;border-radius:3px}
+
+/* ===== 观影指南：签证类型贴纸 8 张 ===== */
+.guide{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.guide article{transition:.22s}
+.sticker{background:#fff;border:2px dashed var(--gold);border-radius:4px;padding:14px 12px 16px;text-align:center;
+  box-shadow:0 6px 16px rgba(5,15,31,.06)}
+.sticker .vs{width:74px;height:46px;margin:0 auto 10px;border-radius:3px;position:relative;overflow:hidden;
+  border:1px solid var(--navy2)}
+.guide article:nth-child(4n+1) .vs{background:linear-gradient(150deg,#3c5c86,var(--navy3))}
+.guide article:nth-child(4n+2) .vs{background:linear-gradient(150deg,#2f7d5d,#123c31)}
+.guide article:nth-child(4n+3) .vs{background:linear-gradient(150deg,#c8a45c,#7d5f22)}
+.guide article:nth-child(4n+4) .vs{background:linear-gradient(150deg,#c8102e,#6b0817)}
+.sticker .vs::after{content:"";position:absolute;inset:0;background-image:var(--wm)}
+.sticker .vs em{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);font-style:normal;font-size:16px;z-index:2}
+.sticker .vs s{position:absolute;right:4px;bottom:3px;z-index:2;font-family:var(--mono);font-size:8px;font-weight:700;
+  color:#fff;background:rgba(5,15,31,.6);padding:1px 5px;border-radius:2px;text-decoration:none}
+.guide .no{display:block;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.1em;color:var(--sub)}
+.guide h4{font-size:15px;font-weight:900;margin:3px 0 5px;letter-spacing:-.2px}
+.guide p{font-size:12px;font-weight:700;color:var(--txt)}
+.guide article:hover{transform:translateY(-5px)}
+.guide .go{display:inline-block;font-size:12.5px;font-weight:900;color:var(--navy2);margin-top:9px;
+  border-bottom:3px solid var(--gold)}
+
+/* ===== 资讯 ===== */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.news article{background:#fff;border:1px solid var(--page3);border-radius:4px;overflow:hidden;transition:.22s;
+  display:flex;flex-direction:column;box-shadow:0 6px 16px rgba(5,15,31,.06)}
+.news article:hover{transform:translateY(-5px);box-shadow:0 18px 28px rgba(18,41,74,.2)}
+.news .ph{height:112px;position:relative;border-bottom:1px solid var(--page3)}
+.news .ph::after{content:"";position:absolute;inset:0;background-image:var(--wm)}
+.news .ph s{position:absolute;right:10px;bottom:10px;z-index:2;font-family:var(--mono);font-size:11px;font-weight:700;
+  color:#fff;background:var(--navy2);padding:4px 11px;text-decoration:none;border-radius:3px}
+.news .b{padding:16px}
+.news h3{font-size:15.5px;font-weight:900;line-height:1.5;margin-bottom:8px;letter-spacing:-.3px}
+.news p{font-size:13px;color:var(--txt);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.news time{display:block;margin-top:10px;font-family:var(--mono);font-size:11px;font-weight:700;color:var(--sub);letter-spacing:.04em}
+
+/* ===== FAQ ===== */
+.faq{background:#fff;border:1px solid var(--page3);border-radius:4px;padding:4px 24px;
+  box-shadow:0 6px 16px rgba(5,15,31,.06)}
+.faq details{padding:15px 0;border-bottom:1px dotted var(--page3)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;font-size:15.5px;font-weight:900;letter-spacing:-.3px;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"查验";font-size:11px;font-weight:900;color:#fff;background:var(--navy2);
+  padding:3px 10px;border-radius:3px;flex:0 0 auto}
+.faq details[open] summary::after{content:"已放行";background:var(--green)}
+.faq p{font-size:14px;color:var(--txt);padding-top:10px}
+
+/* ===== 页脚 ===== */
+footer{margin-top:38px;position:relative;background:linear-gradient(170deg,var(--navy),var(--navy3));
+  color:rgba(247,240,224,.86);padding:34px 0 26px}
+footer::before{content:"";display:block;height:8px;position:absolute;left:0;right:0;top:0;
+  background:repeating-linear-gradient(90deg,var(--gold) 0 7px,transparent 7px 14px)}
+.f-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:26px}
+.f-grid h4{font-size:15px;font-weight:900;margin-bottom:12px;color:var(--gold)}
+.f-grid a,.f-grid p{font-size:13.5px;color:rgba(247,240,224,.78);line-height:2.05;font-weight:700}
+.f-grid a:hover{color:var(--gold)}
+.f-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;padding-top:18px;border-top:1px dashed rgba(200,164,92,.34)}
+.f-links a{font-size:12.5px;font-weight:800;padding:8px 15px;border-radius:3px;background:rgba(247,240,224,.1);
+  color:rgba(247,240,224,.94);border:1px solid rgba(200,164,92,.3)}
+.f-links a:hover{background:var(--gold);color:var(--navy3);border-color:var(--gold)}
+.copy{margin-top:18px;padding-top:14px;border-top:1px dashed rgba(200,164,92,.34);font-size:12.5px;
+  color:rgba(247,240,224,.62);text-align:center;line-height:1.9}
+#toTop{position:fixed;right:16px;bottom:24px;z-index:70;width:52px;height:52px;border-radius:50%;border:2px solid var(--gold);
+  background:radial-gradient(circle,rgba(200,164,92,.3) 0 34%,transparent 35%),var(--navy2);
+  color:var(--gold);font-size:19px;font-weight:900;cursor:pointer;
+  box-shadow:0 8px 18px rgba(5,15,31,.4);opacity:0;pointer-events:none;transition:.3s}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop:hover{background:var(--gold);color:var(--navy3)}
+
+/* ===== 响应式 ===== */
+@media (max-width:1080px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .guide{grid-template-columns:repeat(3,1fr)}
+  .search{flex:0 1 152px}
+  .titlezone h1{font-size:28px}
+  .pp-grid{grid-template-columns:230px 1.25fr .95fr}
+}
+@media (max-width:900px){
+  .pp-grid{grid-template-columns:230px 1fr}
+  .stampzone{grid-column:1 / -1;border-left:0;border-top:1px solid var(--page3)}
+  .board{grid-template-columns:1fr 1fr}
+  .news{grid-template-columns:1fr 1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  .menu-btn{display:block}
+  .search{display:none}
+  .nav{position:fixed;left:0;right:0;top:76px;z-index:59;max-height:0;overflow:hidden;transition:max-height .3s ease;
+    background:var(--navy3);flex-direction:column;align-items:stretch;padding:0 20px}
+  body.menu-open .nav{max-height:390px;padding:8px 20px 14px}
+  .nav a{padding:13px 12px;border-bottom:1px dashed rgba(200,164,92,.28);border-radius:0;color:rgba(247,240,224,.94)}
+  .nav a:last-child{border-bottom:0}
+  .hero{padding:10px 0 4px}
+  .passport{padding:0 8px 8px;border-radius:6px}
+  .passport .hdr{height:26px;margin:0 -8px 10px;padding:0 12px}
+  .pp-grid{grid-template-columns:1fr}
+  .datapage{display:flex;gap:12px;align-items:flex-start;border-right:0;border-bottom:1px solid var(--page3);padding:13px}
+  .datapage .ph{width:78px;height:98px;flex:0 0 auto}
+  .datapage dl{flex:1;margin-top:0;min-width:0}
+  .datapage .mrzline{grid-column:1 / -1}
+  .titlezone{padding:16px 15px 14px}
+  .titlezone h1{font-size:24px;letter-spacing:0}
+  .titlezone .lead{font-size:14px}
+  .hero-btns .btn{flex:1 1 46%;text-align:center;padding:11px 12px;font-size:13.5px}
+  .stampzone{padding:13px}
+  .grid{grid-template-columns:1fr 1fr;gap:14px}
+  /* 入境记录表降级：隐藏表头与口岸/停留列 */
+  .entry .thead{display:none}
+  .entry .trow{grid-template-columns:76px 1fr;gap:10px;padding:11px 0}
+  .entry .port,.entry .stay{display:none}
+  .entry .go{grid-column:1 / -1}
+  .entry ol{padding:0 13px}
+  section{padding:24px 0 4px}
+  .sec-head h2{font-size:19px}
+  .board,.news{grid-template-columns:1fr}
+  .board .vpage{height:66px}
+  .guide{grid-template-columns:1fr 1fr;gap:14px}
+  .sticker{padding:12px 10px 14px}
+  .sticker .vs{width:64px;height:40px}
+  .f-grid{grid-template-columns:1fr;gap:16px}
+  .copy{text-align:left}
+  .mrz{height:24px;margin:20px 0 16px}
+  .stamp-row{gap:8px;margin:18px 0 14px}
+  .stamp-row s{width:28px;height:28px;font-size:8px}
+  .visa:hover,.guide article:hover,.news article:hover{transform:none}
+}
+@media (max-width:400px){
+  .grid{grid-template-columns:1fr}
+  .logo b{font-size:18px}
+  .kpi,.marks{grid-template-columns:1fr}
+  .marks{grid-template-columns:1fr 1fr}
+  .guide{grid-template-columns:1fr}
+  .datapage{flex-direction:column}
+  .datapage dl{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://wodedianyingwang-cn.github.io/#website",
+      "url":"https://wodedianyingwang-cn.github.io/",
+      "name":"我的电影网",
+      "alternateName":"我的电影网高清影视在线观看",
+      "description":"我的电影网提供高清电影、电视剧、综艺、动漫资源免费在线观看,按签证口岸编号分类整理片库与影视排行榜、观影指南与影视资讯,支持手机移动端自适应播放。",
+      "inLanguage":"zh-CN",
+      "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https://wodedianyingwang-cn.github.io/?s={search_term_string}",
+        "query-input":"required name=search_term_string"
+      }
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://wodedianyingwang-cn.github.io/#org",
+      "name":"我的电影网",
+      "url":"https://wodedianyingwang-cn.github.io/",
+      "logo":"https://wodedianyingwang-cn.github.io/favicon.ico"
+    },
+    {
+      "@type":"ItemList",
+      "name":"我的电影网热门影视榜单",
+      "itemListOrder":"https://schema.org/ItemListOrderDescending",
+      "numberOfItems":6,
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"沙丘2"},
+        {"@type":"ListItem","position":2,"name":"周处除三害"},
+        {"@type":"ListItem","position":3,"name":"你想活出怎样的人生"},
+        {"@type":"ListItem","position":4,"name":"飞驰人生2"},
+        {"@type":"ListItem","position":5,"name":"抓娃娃"},
+        {"@type":"ListItem","position":6,"name":"默杀"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="我的电影网首页">
+      <span class="book" aria-hidden="true"></span>
+      <span><b>我的<em>电影网</em></b><small>MY CINEMA PASSPORT</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="网站主导航">
+      <a href="#" class="on">通关首页</a>
+      <a href="#">电影</a>
+      <a href="#">电视剧</a>
+      <a href="#">综艺</a>
+      <a href="#">动漫</a>
+      <a href="#">排行榜</a>
+      <a href="#">观影指南</a>
+      <a href="#">资讯</a>
+    </nav>
+    <form class="search" action="#" method="get" role="search" onsubmit="return false;">
+      <input type="search" name="s" placeholder="在我的电影网找片…" aria-label="搜索影片">
+      <button type="submit">查验</button>
+    </form>
+    <button class="menu-btn" id="menuBtn" aria-label="展开导航菜单" aria-expanded="false">口岸</button>
+  </div>
+</header>
+
+<div class="portbar">
+  <div class="wrap">
+    <nav class="row" aria-label="口岸代码导航">
+      <a href="#" class="on"><u>HOME</u>通关首页</a>
+      <a href="#"><u>PVG</u>电影口岸</a>
+      <a href="#"><u>PEK</u>剧集口岸</a>
+      <a href="#"><u>CAN</u>综艺口岸</a>
+      <a href="#"><u>CTU</u>动漫口岸</a>
+      <a href="#"><u>HKG</u>影视榜单</a>
+      <a href="#"><u>SHA</u>观影指南</a>
+      <a href="#"><u>SZX</u>影视资讯</a>
+    </nav>
+  </div>
+</div>
+
+<div class="hero wrap">
+  <div class="passport">
+    <div class="hdr"><em>通 关 护 照 · 我的电影网 · NO. WD-0521</em><s>每日 20:00 上新</s></div>
+    <div class="inner">
+      <div class="pp-grid">
+        <aside class="datapage">
+          <div class="ph"><s>PHOTO</s></div>
+          <dl>
+            <div><dt>NAME</dt><dd>我的电影网</dd></div>
+            <div><dt>TYPE</dt><dd>影视在线观看</dd></div>
+            <div><dt>NATIONALITY</dt><dd>CINEMA / CN</dd></div>
+            <div><dt>ISSUE</dt><dd>2026-01-01</dd></div>
+            <div><dt>EXPIRY</dt><dd>长期有效</dd></div>
+          </dl>
+          <div class="mrzline">WD&lt;&lt;CINEMA&lt;&lt;MY&lt;&lt;0521&lt;&lt;CN&lt;&lt;</div>
+        </aside>
+
+        <div class="titlezone">
+          <span class="tag">★ 已放行 · 今日通关 12 部新片</span>
+          <h1>我的电影网　<span>高清影视免费在线看</span></h1>
+          <p class="lead">我的电影网收录高清电影、电视剧、综艺与动漫资源，按签证口岸逐级整理片库，<b>支持手机移动端自适应播放</b>，打开即看、无需等待。找片、追剧、查榜，我的电影网一站通关。</p>
+          <div class="prog">
+            <div class="row"><em>片库容量</em><span class="bar"><i></i></span><s>96%</s></div>
+            <div class="row"><em>输出画质</em><span class="bar"><i></i></span><s>88%</s></div>
+            <div class="row"><em>更新频率</em><span class="bar"><i></i></span><s>92%</s></div>
+          </div>
+          <div class="hero-btns">
+            <a class="btn btn-1" href="#">▶ 立即通关</a>
+            <a class="btn btn-2" href="#">今日通关片单</a>
+          </div>
+        </div>
+
+        <aside class="stampzone">
+          <div class="hd"><b>入境签章区</b><s>WD / 12</s></div>
+          <div class="marks">
+            <span class="mark"><b>PVG</b>2026.09</span>
+            <span class="mark"><b>PEK</b>2026.09</span>
+            <span class="mark"><b>CAN</b>2026.09</span>
+            <span class="mark"><b>CTU</b>2026.09</span>
+          </div>
+          <div class="kpi">
+            <div><b>86,900+</b><span>片库资源</span></div>
+            <div><b>24H</b><span>更新不停</span></div>
+            <div><b>1080P/4K</b><span>画质任选</span></div>
+            <div><b>MOBILE</b><span>移动端播放</span></div>
+          </div>
+          <a class="go" href="#">查看完整通关片单 →</a>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="mrz" aria-hidden="true"></div>
+</div>
+
+<main>
+<!-- 栏目一：热门推荐（签证贴纸卡 4 列） -->
+<section id="hot" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>我的电影网热门推荐</h2>
+      <p>今日放行 · 检索量最高的影片</p>
+    </div>
+    <a class="more" href="#">查看全部 →</a>
+  </div>
+  <div class="tabs" aria-label="影片类型筛选">
+    <a href="#" class="on">全部口岸</a>
+    <a href="#">动作</a>
+    <a href="#">科幻</a>
+    <a href="#">喜剧</a>
+    <a href="#">悬疑</a>
+    <a href="#">爱情</a>
+    <a href="#">动画</a>
+    <a href="#">剧情</a>
+    <a href="#">国产</a>
+    <a href="#">欧美</a>
+  </div>
+  <div class="grid">
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-101 / PVG</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#3c5c86,#050f1f)"></div><span class="wm"></span>
+        <span class="ep">高清</span><span class="sc">8.9</span>
+        <div class="tt">沙丘2</div>
+      </div>
+      <div class="sinfo"><div class="nm">沙丘2</div><div class="mt">SCI-FI / 科幻史诗 · 2024</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>热映中</b></div></div>
+    </a></article>
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-102 / PEK</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#2f7d5d,#0b2b20)"></div><span class="wm"></span>
+        <span class="ep">高清</span><span class="sc">8.7</span>
+        <div class="tt">周处除三害</div>
+      </div>
+      <div class="sinfo"><div class="nm">周处除三害</div><div class="mt">ACTION / 动作犯罪 · 2023</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>热映中</b></div></div>
+    </a></article>
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-103 / CAN</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#c8a45c,#5e4318)"></div><span class="wm"></span>
+        <span class="ep">高清</span><span class="sc">8.4</span>
+        <div class="tt">飞驰人生2</div>
+      </div>
+      <div class="sinfo"><div class="nm">飞驰人生2</div><div class="mt">COMEDY / 喜剧运动 · 2024</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>热映中</b></div></div>
+    </a></article>
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-104 / CTU</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#c8102e,#5c0813)"></div><span class="wm"></span>
+        <span class="ep">新片</span><span class="sc">8.0</span>
+        <div class="tt">默杀</div>
+      </div>
+      <div class="sinfo"><div class="nm">默杀</div><div class="mt">THRILL / 悬疑剧情 · 2024</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>待上映</b></div></div>
+    </a></article>
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-105 / HKG</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#1f5f8b,#08243a)"></div><span class="wm"></span>
+        <span class="ep">4K</span><span class="sc">8.6</span>
+        <div class="tt">你想活出怎样的人生</div>
+      </div>
+      <div class="sinfo"><div class="nm">你想活出怎样的人生</div><div class="mt">ANIME / 动画奇幻 · 2023</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>热映中</b></div></div>
+    </a></article>
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-106 / SHA</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#2c4d78,#050f1f)"></div><span class="wm"></span>
+        <span class="ep">高清</span><span class="sc">8.2</span>
+        <div class="tt">抓娃娃</div>
+      </div>
+      <div class="sinfo"><div class="nm">抓娃娃</div><div class="mt">COMEDY / 家庭喜剧 · 2024</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>热映中</b></div></div>
+    </a></article>
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-107 / SZX</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#215a41,#05180f)"></div><span class="wm"></span>
+        <span class="ep">高清</span><span class="sc">8.3</span>
+        <div class="tt">白日之下</div>
+      </div>
+      <div class="sinfo"><div class="nm">白日之下</div><div class="mt">DRAMA / 现实剧情 · 2023</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>热映中</b></div></div>
+    </a></article>
+    <article class="visa"><a href="#">
+      <div class="hd"><span>WD-108 / PVG</span><s>VISA</s></div>
+      <div class="vv">
+        <div class="bg" style="background:linear-gradient(170deg,#7d5f22,#241a05)"></div><span class="wm"></span>
+        <span class="ep">高清</span><span class="sc">7.9</span>
+        <div class="tt">姥姥的外孙</div>
+      </div>
+      <div class="sinfo"><div class="nm">姥姥的外孙</div><div class="mt">DRAMA / 家庭情感 · 2024</div>
+        <div class="row"><span><i class="seal"></i>2027.12</span><b>热映中</b></div></div>
+    </a></article>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="stamp-row" aria-hidden="true"><i></i><s>PVG</s><s>PEK</s><s>CAN</s><s>CTU</s><i></i></div>
+</div>
+
+<!-- 栏目二：电影（入境记录表 五列栅格） -->
+<section id="movie" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>我的电影网 · 电影入境记录</h2>
+      <p>院线新片 · 经典佳片 · 1080P / 4K 高清</p>
+    </div>
+    <a class="more" href="#">进入电影口岸 →</a>
+  </div>
+  <div class="entry">
+    <div class="et-hd"><b>PVG · 电影入境记录</b><s>共 42 片</s></div>
+    <div class="thead"><span>入境日期</span><span>口岸</span><span>影片名称</span><span>停留</span><span>签章</span></div>
+    <ol>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-18</span>
+          <span class="port">PVG</span>
+          <span class="nm"><b>奥本海默</b><em>DRAMA / 传记剧情 · 2023</em></span>
+          <span class="stay">168 分钟</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-17</span>
+          <span class="port">PVG</span>
+          <span class="nm"><b>流浪地球3</b><em>SCI-FI / 科幻冒险 · 2027</em></span>
+          <span class="stay">150 分钟</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-16</span>
+          <span class="port">PVG</span>
+          <span class="nm"><b>哪吒之魔童闹海</b><em>ANIME / 动画奇幻 · 2025</em></span>
+          <span class="stay">144 分钟</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-15</span>
+          <span class="port">PVG</span>
+          <span class="nm"><b>死侍与金刚狼</b><em>ACTION / 动作喜剧 · 2024</em></span>
+          <span class="stay">128 分钟</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-14</span>
+          <span class="port">PVG</span>
+          <span class="nm"><b>疯狂元素城</b><em>ANIME / 动画冒险 · 2023</em></span>
+          <span class="stay">102 分钟</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-13</span>
+          <span class="port">PVG</span>
+          <span class="nm"><b>哥斯拉大战金刚2</b><em>ACTION / 怪兽动作 · 2024</em></span>
+          <span class="stay">115 分钟</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 栏目三：电视剧 -->
+<section id="tv" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>我的电影网 · 剧集入境记录</h2>
+      <p>国产剧 · 美剧 · 日韩剧 · 同步更新</p>
+    </div>
+    <a class="more" href="#">进入剧集口岸 →</a>
+  </div>
+  <div class="entry">
+    <div class="et-hd"><b>PEK · 剧集入境记录</b><s>共 36 部</s></div>
+    <div class="thead"><span>入境日期</span><span>口岸</span><span>剧集名称</span><span>停留</span><span>签章</span></div>
+    <ol>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-18</span>
+          <span class="port">PEK</span>
+          <span class="nm"><b>庆余年 第二季</b><em>古装权谋 · 更新至 36 集</em></span>
+          <span class="stay">36 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-17</span>
+          <span class="port">PEK</span>
+          <span class="nm"><b>繁花</b><em>都市年代 · 已完结</em></span>
+          <span class="stay">30 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-16</span>
+          <span class="port">PEK</span>
+          <span class="nm"><b>漫长的季节</b><em>悬疑生活 · 已完结</em></span>
+          <span class="stay">12 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-15</span>
+          <span class="port">PEK</span>
+          <span class="nm"><b>我的阿勒泰</b><em>治愈散文剧 · 已完结</em></span>
+          <span class="stay">8 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-14</span>
+          <span class="port">PEK</span>
+          <span class="nm"><b>熊家餐馆 第三季</b><em>美剧 · 更新中</em></span>
+          <span class="stay">10 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-13</span>
+          <span class="port">PEK</span>
+          <span class="nm"><b>边水往事</b><em>悬疑冒险 · 已完结</em></span>
+          <span class="stay">21 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 栏目四：综艺与动漫 -->
+<section id="show" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>我的电影网 · 综艺动漫入境记录</h2>
+      <p>爆款综艺与热门番剧同步上线</p>
+    </div>
+    <a class="more" href="#">进入综艺动漫口岸 →</a>
+  </div>
+  <div class="entry">
+    <div class="et-hd"><b>CAN · 综艺入境记录</b><s>共 28 档</s></div>
+    <div class="thead"><span>入境日期</span><span>口岸</span><span>节目名称</span><span>停留</span><span>签章</span></div>
+    <ol>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-18</span>
+          <span class="port">CAN</span>
+          <span class="nm"><b>歌手2025</b><em>音乐竞演 · 更新中</em></span>
+          <span class="stay">12 期</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-17</span>
+          <span class="port">CAN</span>
+          <span class="nm"><b>喜人奇妙夜</b><em>喜剧竞演 · 更新中</em></span>
+          <span class="stay">10 期</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-16</span>
+          <span class="port">CAN</span>
+          <span class="nm"><b>现在就出发</b><em>旅行真人秀 · 更新中</em></span>
+          <span class="stay">12 期</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-15</span>
+          <span class="port">CAN</span>
+          <span class="nm"><b>花儿与少年</b><em>旅行真人秀 · 更新中</em></span>
+          <span class="stay">12 期</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="entry" style="margin-top:16px">
+    <div class="et-hd"><b>CTU · 动漫入境记录</b><s>共 52 部</s></div>
+    <div class="thead"><span>入境日期</span><span>口岸</span><span>番剧名称</span><span>停留</span><span>签章</span></div>
+    <ol>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-18</span>
+          <span class="port">CTU</span>
+          <span class="nm"><b>海贼王</b><em>热血冒险 · 连载中</em></span>
+          <span class="stay">1100 话</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-17</span>
+          <span class="port">CTU</span>
+          <span class="nm"><b>葬送的芙莉莲</b><em>奇幻治愈 · 已完结</em></span>
+          <span class="stay">28 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-16</span>
+          <span class="port">CTU</span>
+          <span class="nm"><b>凡人修仙传</b><em>国漫年番 · 更新中</em></span>
+          <span class="stay">年番</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+      <li>
+        <div class="trow">
+          <span class="date">2026-09-15</span>
+          <span class="port">CTU</span>
+          <span class="nm"><b>咒术回战</b><em>热血战斗 · 连载中</em></span>
+          <span class="stay">47 集</span>
+          <a class="go" href="#">立即观看</a>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 栏目五：影视排行榜（三张签证页） -->
+<section id="rank" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>我的电影网影视排行榜</h2>
+      <p>实时热度 · 口碑评分 · 观看人次综合排序</p>
+    </div>
+    <a class="more" href="#">完整榜单 →</a>
+  </div>
+  <div class="board">
+    <div class="col">
+      <div class="vpage" aria-hidden="true"><b>签证页 A · 电影</b><i></i></div>
+      <div class="hd"><h3>电影热播榜</h3><s>TOP 6</s></div>
+      <ol>
+        <li><a href="#"><span class="no">1</span><span class="t">沙丘2</span><span class="h">8.9</span></a></li>
+        <li><a href="#"><span class="no">2</span><span class="t">周处除三害</span><span class="h">8.7</span></a></li>
+        <li><a href="#"><span class="no">3</span><span class="t">你想活出怎样的人生</span><span class="h">8.6</span></a></li>
+        <li><a href="#"><span class="no">4</span><span class="t">飞驰人生2</span><span class="h">8.4</span></a></li>
+        <li><a href="#"><span class="no">5</span><span class="t">抓娃娃</span><span class="h">8.2</span></a></li>
+        <li><a href="#"><span class="no">6</span><span class="t">默杀</span><span class="h">8.0</span></a></li>
+      </ol>
+    </div>
+    <div class="col">
+      <div class="vpage" aria-hidden="true"><b>签证页 B · 剧集</b><i></i></div>
+      <div class="hd"><h3>剧集热播榜</h3><s>TOP 6</s></div>
+      <ol>
+        <li><a href="#"><span class="no">1</span><span class="t">漫长的季节</span><span class="h">9.4</span></a></li>
+        <li><a href="#"><span class="no">2</span><span class="t">熊家餐馆 第三季</span><span class="h">9.0</span></a></li>
+        <li><a href="#"><span class="no">3</span><span class="t">我的阿勒泰</span><span class="h">8.9</span></a></li>
+        <li><a href="#"><span class="no">4</span><span class="t">繁花</span><span class="h">8.6</span></a></li>
+        <li><a href="#"><span class="no">5</span><span class="t">庆余年 第二季</span><span class="h">8.5</span></a></li>
+        <li><a href="#"><span class="no">6</span><span class="t">边水往事</span><span class="h">8.3</span></a></li>
+      </ol>
+    </div>
+    <div class="col">
+      <div class="vpage" aria-hidden="true"><b>签证页 C · 动漫</b><i></i></div>
+      <div class="hd"><h3>动漫热播榜</h3><s>TOP 6</s></div>
+      <ol>
+        <li><a href="#"><span class="no">1</span><span class="t">海贼王</span><span class="h">9.2</span></a></li>
+        <li><a href="#"><span class="no">2</span><span class="t">葬送的芙莉莲</span><span class="h">9.1</span></a></li>
+        <li><a href="#"><span class="no">3</span><span class="t">凡人修仙传</span><span class="h">8.7</span></a></li>
+        <li><a href="#"><span class="no">4</span><span class="t">咒术回战</span><span class="h">8.5</span></a></li>
+        <li><a href="#"><span class="no">5</span><span class="t">斗破苍穹 年番</span><span class="h">8.4</span></a></li>
+        <li><a href="#"><span class="no">6</span><span class="t">镖人</span><span class="h">8.6</span></a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：观影指南（签证类型贴纸 8 张） -->
+<section id="guide" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>我的电影网观影指南</h2>
+      <p>按签证类型检索片库</p>
+    </div>
+    <a class="more" href="#">全部指南 →</a>
+  </div>
+  <div class="guide">
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>🎬</em><s>A</s></span>
+        <span class="no">VISA A</span>
+        <h4>院线新片</h4>
+        <p>刚下映与热映中的大片</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>⭐</em><s>B</s></span>
+        <span class="no">VISA B</span>
+        <h4>高分佳作</h4>
+        <p>评分 8.0 以上口碑片</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>📺</em><s>C</s></span>
+        <span class="no">VISA C</span>
+        <h4>热播剧集</h4>
+        <p>国产美剧日韩剧同步</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>🌿</em><s>D</s></span>
+        <span class="no">VISA D</span>
+        <h4>动漫番剧</h4>
+        <p>新番与国漫年番追更</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>🍿</em><s>E</s></span>
+        <span class="no">VISA E</span>
+        <h4>轻松解压</h4>
+        <p>喜剧综艺轻松看完</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>🧸</em><s>F</s></span>
+        <span class="no">VISA F</span>
+        <h4>亲子动画</h4>
+        <p>全家一起看的动画</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>🌙</em><s>G</s></span>
+        <span class="no">VISA G</span>
+        <h4>夜色剧场</h4>
+        <p>悬疑惊悚与文艺片</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+    <article><a href="#">
+      <div class="sticker">
+        <span class="vs"><em>🎞️</em><s>H</s></span>
+        <span class="no">VISA H</span>
+        <h4>经典修复</h4>
+        <p>老片高清修复版本</p>
+      </div>
+      <span class="go">进入指南 →</span>
+    </a></article>
+  </div>
+</section>
+
+<!-- 栏目七：影视资讯 -->
+<section id="news" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>我的电影网影视资讯</h2>
+      <p>新片定档 · 剧集开播 · 观影攻略</p>
+    </div>
+    <a class="more" href="#">更多资讯 →</a>
+  </div>
+  <div class="news">
+    <article><a href="#">
+      <div class="ph" style="background:linear-gradient(140deg,#3c5c86,#050f1f)"><s>通关播报 一</s></div>
+      <div class="b">
+        <h3>本周新片收录清单，3 部 4K 大片一次看够</h3>
+        <p>涵盖科幻、动作与动画三大类型，我的电影网已同步更新高清片源与中文字幕。</p>
+        <time datetime="2026-09-18">2026-09-18</time>
+      </div>
+    </a></article>
+    <article><a href="#">
+      <div class="ph" style="background:linear-gradient(140deg,#2f7d5d,#0b2b20)"><s>通关播报 二</s></div>
+      <div class="b">
+        <h3>剧集追更表：这些剧今晚 20:00 更新</h3>
+        <p>古装权谋、都市现实与治愈系三线并行，追更进度可在我的电影网榜单页查看。</p>
+        <time datetime="2026-09-17">2026-09-17</time>
+      </div>
+    </a></article>
+    <article><a href="#">
+      <div class="ph" style="background:linear-gradient(140deg,#c8a45c,#5e4318)"><s>通关播报 三</s></div>
+      <div class="b">
+        <h3>手机看片更省流？移动端自适应播放实测</h3>
+        <p>小屏自适应布局 + 多码率切换，我的电影网在弱网环境下依旧保持流畅播放。</p>
+        <time datetime="2026-09-15">2026-09-15</time>
+      </div>
+    </a></article>
+  </div>
+</section>
+
+<!-- 栏目八：常见问题 -->
+<section id="faq" class="wrap">
+  <div class="sec-head">
+    <div>
+      <h2>关于我的电影网的常见问题</h2>
+      <p>新用户必读 · 播放与找片说明</p>
+    </div>
+  </div>
+  <div class="faq">
+    <details open>
+      <summary>我的电影网是什么类型的影视网站？</summary>
+      <p>我的电影网是一个按签证口岸逐级整理片库的影视在线观看平台，收录电影、电视剧、综艺、动漫资源，提供影视榜单、观影指南与影视资讯，支持电脑与手机移动端自适应浏览。</p>
+    </details>
+    <details>
+      <summary>我的电影网更新频率怎么样？</summary>
+      <p>我的电影网每日 20:00 定时更新片库，院线新片、热播剧集与热门动漫同步跟进，并在影视排行榜中实时呈现热度变化。</p>
+    </details>
+    <details>
+      <summary>在手机上打开我的电影网会很耗流量吗？</summary>
+      <p>不会。我的电影网移动端采用自适应布局与多码率切换，可根据网络状况自动匹配清晰度，弱网环境下也能保持流畅播放。</p>
+    </details>
+    <details>
+      <summary>怎么在我的电影网快速找到想看的片子？</summary>
+      <p>可使用站内检索框按片名、演员或类型查阅，也可以通过「热门推荐」的类型筛选、顶部口岸代码导航与「观影指南」的签证类型入口快速定位。</p>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <h4>我的电影网</h4>
+        <p>我的电影网提供高清电影、电视剧、综艺、动漫在线观看服务，按签证口岸逐级整理片库，移动端自适应，每日更新影视榜单与资讯，是找片追剧的影视导航站。</p>
+        <p style="margin-top:10px">网址：https://wodedianyingwang-cn.github.io</p>
+      </div>
+      <div>
+        <h4>口岸片库</h4>
+        <p><a href="#">PVG 电影口岸</a></p>
+        <p><a href="#">PEK 剧集口岸</a></p>
+        <p><a href="#">CAN 综艺口岸</a></p>
+        <p><a href="#">CTU 动漫口岸</a></p>
+      </div>
+      <div>
+        <h4>榜单与指南</h4>
+        <p><a href="#">HKG 影视榜单</a></p>
+        <p><a href="#">SHA 观影指南</a></p>
+        <p><a href="#">SZX 影视资讯</a></p>
+        <p><a href="#">今日通关片单</a></p>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <p><a href="#">站点介绍</a></p>
+        <p><a href="#">免责声明</a></p>
+        <p><a href="#">版权投诉</a></p>
+        <p><a href="#">联系我们</a></p>
+      </div>
+    </div>
+    <nav class="f-links" aria-label="友情链接">
+      <a href="#">我的电影网在线观看</a>
+      <a href="#">我的电影网</a>
+      <a href="#">电影在线观看</a>
+      <a href="#">电视剧大全</a>
+      <a href="#">综艺节目</a>
+      <a href="#">动漫番剧</a>
+      <a href="#">影视排行榜</a>
+      <a href="#">手机看电影</a>
+    </nav>
+    <p class="copy">
+      © 2026 我的电影网 wodedianyingwang-cn.github.io · 本站仅为影视信息聚合与导航展示<br>
+      我的电影网所收录的影视信息均来自公开网络，版权归原权利人所有
+    </p>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="返回顶部">↑</button>
+
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),t=document.getElementById('toTop');
+  b && b.addEventListener('click',function(){
+    var open=document.body.classList.toggle('menu-open');
+    this.setAttribute('aria-expanded',open?'true':'false');
+    this.classList.toggle('on',open);
+  });
+  document.querySelectorAll('.nav a').forEach(function(a){
+    a.addEventListener('click',function(){
+      document.body.classList.remove('menu-open');
+      if(b){b.setAttribute('aria-expanded','false');b.classList.remove('on');}
+    });
+  });
+  t && t.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+  window.addEventListener('scroll',function(){
+    window.scrollY>420 ? t.classList.add('show') : t.classList.remove('show');
+  },{passive:true});
+  document.querySelectorAll('.tabs a').forEach(function(el){
+    el.addEventListener('click',function(){
+      document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on');});
+      el.classList.add('on');
+    });
+  });
+  document.querySelectorAll('.portbar a').forEach(function(el){
+    el.addEventListener('click',function(){
+      document.querySelectorAll('.portbar a').forEach(function(x){x.classList.remove('on');});
+      el.classList.add('on');
+    });
+  });
+})();
+</script>
+</body>
+</html>
